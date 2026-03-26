@@ -1,0 +1,43 @@
+.row {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  margin: 4px 0;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(135deg, var(--green-600), var(--green-400));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  color: #fff;
+  box-shadow: 0 3px 8px rgba(5, 150, 105, 0.35);
+}
+
+.indicator {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  padding: 14px 18px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 18px 18px 18px 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+  width: fit-content;
+}
+
+.indicator span {
+  width: 8px;
+  height: 8px;
+  background: var(--green-400);
+  border-radius: 50%;
+  animation: typeBounce 1.3s infinite;
+}
+
+.indicator span:nth-child(2) { animation-delay: 0.18s; }
+.indicator span:nth-child(3) { animation-delay: 0.36s; }

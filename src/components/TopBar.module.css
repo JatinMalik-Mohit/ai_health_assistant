@@ -1,0 +1,91 @@
+.topbar {
+  background: #fff;
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 8px rgba(6, 78, 59, 0.05);
+  flex-shrink: 0;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--text-dark);
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: background 0.15s;
+  margin-right: 4px;
+}
+
+.hamburger:hover { background: var(--green-50); }
+
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--green-100), var(--green-200));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: var(--green-700);
+  flex-shrink: 0;
+}
+
+.avatar.hasPatient {
+  background: linear-gradient(135deg, var(--green-600), var(--green-400));
+  color: #fff;
+  font-family: var(--font-display);
+  font-weight: 700;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-dark);
+}
+
+.sub {
+  font-size: 12px;
+  color: var(--text-light);
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  color: var(--green-700);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 50px;
+  flex-shrink: 0;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  background: var(--green-500);
+  border-radius: 50%;
+  animation: blink 2s infinite;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; align-items: center; }
+  .topbar    { padding: 0 14px; }
+}
